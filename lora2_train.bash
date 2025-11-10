@@ -1,0 +1,41 @@
+cd /root/autodl-tmp/LLaMA-Factory
+
+llamafactory-cli train \
+    --stage sft \
+    --do_train True \
+    --model_name_or_path /root/autodl-tmp/Llama-3.1-8B-Instruct \
+    --preprocessing_num_workers 16 \
+    --finetuning_type lora \
+    --template llama3 \
+    --flash_attn auto \
+    --dataset_dir data \
+    --dataset step1_train2 \
+    --cutoff_len 2048 \
+    --learning_rate 5e-05 \
+    --num_train_epochs 2.0 \
+    --max_samples 100000 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 8 \
+    --lr_scheduler_type cosine \
+    --max_grad_norm 1.0 \
+    --logging_steps 10 \
+    --save_steps 500 \
+    --warmup_steps 100 \
+    --packing False \
+    --enable_thinking True \
+    --report_to none \
+    --output_dir /root/autodl-tmp/LLaMA-Factory/saves/Llama-3.1-8B-Instruct/lora/train_2025-11-9 \
+    --bf16 True \
+    --plot_loss True \
+    --trust_remote_code True \
+    --ddp_timeout 180000000 \
+    --include_num_input_tokens_seen True \
+    --optim adamw_torch \
+    --eval_dataset step1_dev2 \
+    --eval_strategy steps \
+    --eval_steps 100 \
+    --per_device_eval_batch_size 2 \
+    --lora_rank 8 \
+    --lora_alpha 16 \
+    --lora_dropout 0.05 \
+    --lora_target all

@@ -1,0 +1,45 @@
+[
+ {
+    "id": "a50e0393-5f8a-49b8-9ad4-9af9efcda161",
+    "sentence": "PVH-IVH中25% ~ 35%发生出血性脑积水，主要发生于III -IV级PVH-IVH，是由于血液或血液小凝块阻塞中脑导水管，导致中脑导水管以上部位梗阻,双侧侧脑室、第三脑室扩大，脑实质受压、脑皮质变薄。临床上出现头围迅速增大、前囟饱满、颅缝分离，并遗留智力、运动发育障碍等后遗症。",
+    "output": [
+      {
+        "subject": [
+          "出血性脑积水",
+          "医学",
+          "疾病"
+        ],
+        "relationship": "病因",
+        "object": [
+          "血液或血液小凝块阻塞中脑导水管",
+          "医学",
+          "病因"
+        ]
+      }
+    ]
+  },
+{
+    "id": "53a74d8b-be09-416a-91dc-69274e6e8465",
+    "sentence": "A Bigger Bang '' accompanies a tour that started last month at Fenway Park in Boston and comes to Madison Square Garden on Sept. 13 and Giants Stadium two days later.",
+    "output": [
+      {
+        "subject": [
+          "Boston",
+          "location",
+          "city"
+        ],
+        "relationship": "location contains",
+        "object": [
+          "Fenway Park",
+          "location",
+          "facility"
+        ]
+      }
+    ]
+  },
+{
+    "id": "16f8a736-b799-4cbb-81c9-7dcff9db1b60",
+    "sentence": "Dave Palic graduated from La Salle High School where he was the 1985 California Interscholastic Federation 1-A Division Player of the Year. He attended Santa Clara University, playing on the men's soccer team from 1985 to 1988. He was a 1988 Second Team All American.",
+    "output": []
+  }
+]
